@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(express.static('public'))
 const UserModle = require('./model/Usermodel')
 
-mongoose.connect('mongodb://localhost:27017/Images')
+mongoose.connect('mongodb+srv://riteshborikar2133:riteshborikar321@cluster0.y5ctwtu.mongodb.net/Images?retryWrites=true&w=majority/Images')
 
 
 const  storage = multer.diskStorage({
